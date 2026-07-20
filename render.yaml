@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: maa-helper
+    runtime: image
+    repo: https://github.com/你的GitHub用户名/你的仓库名
+    plan: free
+    dockerfilePath: ./Dockerfile
