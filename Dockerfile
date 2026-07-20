@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get install -y wget unzip adb && \
     rm -rf /var/lib/apt/lists/*
 
-# 下载最新版 MAA CLI (以 x86_64 为例，请去 https://maa.plus 确认最新版本号)
+# 下载最新版 MAA CLI（以 x86_64 为例）
 RUN wget https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v5.12.3/MAA-v5.12.3-linux-x86_64.tar.gz && \
     tar -zxvf MAA-v5.12.3-linux-x86_64.tar.gz && \
     mv MAA-v5.12.3-linux-x86_64 /maa && \
